@@ -10,6 +10,9 @@
   --Light-green: rgba(0, 231, 123, 0.8);
   --Purple: rgb(207, 0, 255);
   --Light-purple: rgba(207, 0, 255, 0.8);
+
+  /* Colors */
+  --Black: rgb(0, 0, 0);
 }
 
 /* CSS reset */
@@ -24,4 +27,8 @@ html {
 }
 h1 {
   font-family: "Pokemon Hollow", sans-serif;
+  font-size: 45px;
+  color: var(--Black);
+  text-align: center;
+  margin-top: 20px;
 }
