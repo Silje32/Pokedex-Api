@@ -1,3 +1,27 @@
+:root {
+  /* Base Stats */
+  --Red: rgb(255, 99, 71);
+  --Light-red: rgba(255, 99, 71, 0.8);
+  --Orange: rgb(255, 80, 0);
+  --Light-orange: rgba(255, 80, 0, 0.8);
+  --Yellow: rgb(237, 247, 0);
+  --Light-yellow: rgba(237, 247, 0, 0.8);
+  --Green: rgb(0, 231, 123);
+  --Light-green: rgba(0, 231, 123, 0.8);
+  --Purple: rgb(207, 0, 255);
+  --Light-purple: rgba(207, 0, 255, 0.8);
+}
+
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   font-family: "Pokemon Hollow", sans-serif;
 }
