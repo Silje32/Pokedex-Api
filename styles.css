@@ -11,6 +11,10 @@
   --Purple: rgb(207, 0, 255);
   --Light-purple: rgba(207, 0, 255, 0.8);
 
+  /* Pokemon Colors */
+  --Pokeyellow: rgb(247, 207, 70);
+  --Pokeblue: rgba(66, 105, 183);
+
   /* Colors */
   --Black: rgb(0, 0, 0);
 }
