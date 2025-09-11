@@ -15,9 +15,11 @@
   --Pokeyellow: rgb(247, 207, 70);
   --Pokeblue: rgb(66, 105, 183);
   --Pokeopacity: rgba(66, 105, 183, 0.7);
+  --Pokeyellow_opacity: rgba(247, 207, 70, 0.5);
 
   /* Colors */
   --Black: rgb(0, 0, 0);
+  --White: rgb(255, 255, 255);
 }
 
 /* CSS reset */
@@ -35,14 +37,11 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: var(--Black);
-  min-width: 100svw;
-  min-height: 100svh;
 }
 
 /* Header */
 header {
   min-width: 100svw;
-  align-items: center;
 }
 h1 {
   font-family: "Pokemon Hollow", sans-serif;
@@ -65,12 +64,38 @@ li {
   list-style: none;
   display: inline-block;
 }
-li a {
-  color: var(--Black);
+#nav-btn-1 {
+  background-color: var(--White);
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+  border-color: var(--Black);
+  text-align: center;
   font-size: 24px;
-  font-weight: bold;
-  margin-right: 30px;
+  margin-right: 400px;
+  padding: 20px;
 }
+#nav-btn-1:hover {
+  border-color: var(--Pokeyellow);
+  font-weight: bold;
+  cursor: pointer;
+}
+#nav-btn-2 {
+  background-color: var(--White);
+  width: 300px;
+  height: 50px;
+  border-radius: 8px;
+  border-color: var(--Black);
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+}
+#nav-btn-2:hover {
+  border-color: var(--Pokeyellow);
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* Main */
 input {
   width: 400px;
