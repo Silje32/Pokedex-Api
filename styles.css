@@ -116,6 +116,14 @@ input {
   padding: 12px 20px 12px 40px;
 }
 /* Footer */
+footer {
+  min-width: 100svw;
+  height: 135px;
+  background-color: var(--Pokeopacity);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 p a {
   text-decoration: none;
   color: var(--White);
