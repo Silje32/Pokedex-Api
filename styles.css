@@ -30,6 +30,16 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--Black);
+  min-width: 100svw;
+  min-height: 100svh;
+}
+
+/* Header */
 header {
   min-width: 100svw;
   align-items: center;
@@ -54,12 +64,6 @@ li a {
   font-weight: bold;
   margin-right: 30px;
 }
-.nav-links ul li a {
-  color: var(--Gray2);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-}
 h1 {
   font-family: "Pokemon Hollow", sans-serif;
   font-size: 45px;
@@ -67,6 +71,7 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 input {
   width: 400px;
   box-sizing: border-box;
