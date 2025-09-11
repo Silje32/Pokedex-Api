@@ -109,6 +109,13 @@ main {
   margin: auto;
   border-radius: 8px;
 }
+.container {
+  background-color: var(--White);
+  width: 40svw;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 20px;
+}
 input {
   width: 400px;
   box-sizing: border-box;
@@ -120,6 +127,13 @@ input {
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
+}
+.container-2 {
+  background-color: var(--White);
+  width: 90svw;
+  min-height: 500px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 /* Footer */
 footer {
