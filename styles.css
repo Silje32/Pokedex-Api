@@ -13,7 +13,8 @@
 
   /* Pokemon Colors */
   --Pokeyellow: rgb(247, 207, 70);
-  --Pokeblue: rgba(66, 105, 183);
+  --Pokeblue: rgb(66, 105, 183);
+  --Pokeopacity: rgba(66, 105, 183, 0.7);
 
   /* Colors */
   --Black: rgb(0, 0, 0);
@@ -28,6 +29,36 @@
 
 html {
   scroll-behavior: smooth;
+}
+header {
+  min-width: 100svw;
+  align-items: center;
+}
+nav {
+  min-width: 100svw;
+  height: 80px;
+  background-color: var(--Pokeopacity);
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+li a {
+  color: var(--Black);
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.nav-links ul li a {
+  color: var(--Gray2);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
 }
 h1 {
   font-family: "Pokemon Hollow", sans-serif;
