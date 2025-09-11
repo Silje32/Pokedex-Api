@@ -48,7 +48,8 @@ h1 {
   font-size: 45px;
   color: var(--Black);
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  height: 110px;
 }
 nav {
   min-width: 100svw;
