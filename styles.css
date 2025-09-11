@@ -103,6 +103,12 @@ main {
   min-height: 150svh;
   background-image: url(./images/grass.jpeg);
 }
+.background {
+  background-color: var(--Pokeopacity);
+  width: 95svw;
+  margin: auto;
+  border-radius: 8px;
+}
 input {
   width: 400px;
   box-sizing: border-box;
