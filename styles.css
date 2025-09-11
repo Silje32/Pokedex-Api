@@ -44,6 +44,13 @@ header {
   min-width: 100svw;
   align-items: center;
 }
+h1 {
+  font-family: "Pokemon Hollow", sans-serif;
+  font-size: 45px;
+  color: var(--Black);
+  text-align: center;
+  margin-top: 20px;
+}
 nav {
   min-width: 100svw;
   height: 80px;
@@ -64,14 +71,7 @@ li a {
   font-weight: bold;
   margin-right: 30px;
 }
-h1 {
-  font-family: "Pokemon Hollow", sans-serif;
-  font-size: 45px;
-  color: var(--Black);
-  text-align: center;
-  margin-top: 20px;
-}
-
+/* Main */
 input {
   width: 400px;
   box-sizing: border-box;
@@ -84,3 +84,4 @@ input {
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
+/* Footer */
