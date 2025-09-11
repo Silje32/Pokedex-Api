@@ -116,3 +116,10 @@ input {
   padding: 12px 20px 12px 40px;
 }
 /* Footer */
+p a {
+  text-decoration: none;
+  color: var(--White);
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+}
