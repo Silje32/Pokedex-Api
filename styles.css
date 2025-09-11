@@ -98,6 +98,11 @@ li {
 }
 
 /* Main */
+main {
+  min-width: 100svw;
+  min-height: 150svh;
+  background-image: url(./images/grass.jpeg);
+}
 input {
   width: 400px;
   box-sizing: border-box;
