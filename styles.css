@@ -116,6 +116,15 @@ main {
   margin: auto;
   margin-bottom: 20px;
 }
+
+/* Modal */
+.container-1 {
+  background-color: var(--White);
+  width: 20svw;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 h2 {
   font-family: "Open Sans", "Arial" sans-serif;
   font-size: 35px;
