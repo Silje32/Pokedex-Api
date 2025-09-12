@@ -15,7 +15,7 @@
   --Pokeyellow: rgb(247, 207, 70);
   --Pokeblue: rgb(66, 105, 183);
   --Pokeopacity: rgba(66, 105, 183, 0.7);
-  --Pokeyellow_opacity: rgba(247, 207, 70, 0.5);
+  --Pokeyellow_opacity: rgba(247, 207, 70, 0.6);
 
   /* Colors */
   --Black: rgb(0, 0, 0);
@@ -159,6 +159,26 @@ input {
   margin-bottom: 20px;
 }
 
+/* Search Section */
+#find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 400px;
+  margin: auto;
+  background-color: var(--Pokeyellow);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#find:hover {
+  background-color: var(--Pokeyellow_opacity);
+  cursor: pointer;
+}
+
 /* Evolutions Section */
 .gray-box {
   background-color: var(--Background_gray);
@@ -170,6 +190,13 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.img {
+  width: 150px;
+  height: 150px;
+  border-color: var(--Black);
+  border-radius: 50%;
+  border-style: solid;
 }
 /* Footer */
 footer {
