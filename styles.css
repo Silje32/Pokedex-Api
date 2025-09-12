@@ -102,6 +102,7 @@ main {
 .background {
   background-color: var(--Pokeopacity);
   width: 95svw;
+  height: 1200px;
   margin: auto;
   border-radius: 8px;
 }
@@ -146,7 +147,7 @@ input {
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url(../images/Search.png);
+  background-image: url(./images/Search.png);
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
