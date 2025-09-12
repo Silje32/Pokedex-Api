@@ -20,6 +20,7 @@
   /* Colors */
   --Black: rgb(0, 0, 0);
   --White: rgb(255, 255, 255);
+  --Background_gray: rgb(238, 238, 238);
 }
 
 /* CSS reset */
@@ -163,6 +164,19 @@ input {
   min-height: 500px;
   margin: auto;
   margin-bottom: 20px;
+}
+
+/* Evolutions Section */
+.gray-box {
+  background-color: var(--Background_gray);
+  width: 80svw;
+  height: 400px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Footer */
 footer {
