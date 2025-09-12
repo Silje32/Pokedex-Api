@@ -66,7 +66,14 @@ li {
   list-style: none;
   display: inline-block;
 }
-#nav-btn-1 {
+li a {
+  text-decoration: none;
+  color: var(--Black);
+  font-family: "Elementals", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+.nav-btn {
   background-color: var(--White);
   width: 300px;
   height: 50px;
@@ -76,23 +83,11 @@ li {
   font-size: 24px;
   margin-right: 400px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#nav-btn-1:hover {
-  border-color: var(--Pokeyellow);
-  font-weight: bold;
-  cursor: pointer;
-}
-#nav-btn-2 {
-  background-color: var(--White);
-  width: 300px;
-  height: 50px;
-  border-radius: 8px;
-  border-color: var(--Black);
-  text-align: center;
-  font-size: 24px;
-  padding: 20px;
-}
-#nav-btn-2:hover {
+.nav-btn:hover {
   border-color: var(--Pokeyellow);
   font-weight: bold;
   cursor: pointer;
