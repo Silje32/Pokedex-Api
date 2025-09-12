@@ -118,6 +118,12 @@ main {
 }
 
 /* Modal */
+.background_modal {
+  background-color: var(--Pokeopacity);
+  width: 45svw;
+  margin: auto;
+  border-radius: 8px;
+}
 .container-1 {
   background-color: var(--White);
   width: 40svw;
