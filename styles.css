@@ -117,14 +117,12 @@ main {
 .background_modal {
   background-color: var(--Pokeopacity);
   width: 45svw;
-  height: 1000px;
+  height: 1200px;
   margin: auto;
-  flex: wrap;
-  display: flex;
 }
 .container-dialog {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 .container-1 {
   background-color: var(--White);
