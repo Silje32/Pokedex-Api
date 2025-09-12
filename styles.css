@@ -120,10 +120,11 @@ main {
 /* Modal */
 .container-1 {
   background-color: var(--White);
-  width: 20svw;
+  width: 40svw;
   height: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 h2 {
   font-family: "Open Sans", "Arial" sans-serif;
