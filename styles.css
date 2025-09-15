@@ -179,6 +179,16 @@ input {
   background-color: var(--Pokeyellow_opacity);
   cursor: pointer;
 }
+.container_filter {
+  background-color: var(--White);
+  width: 40svw;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Evolutions Section */
 .gray-box {
@@ -192,7 +202,9 @@ input {
   justify-content: center;
   align-items: center;
 }
-.img {
+#img-evolutions_1,
+#img-evolutions_2,
+#img-evolutions_3 {
   width: 150px;
   height: 150px;
   border-color: var(--Black);
