@@ -105,14 +105,14 @@ main {
 .background {
   background-color: var(--Pokeopacity);
   width: 95svw;
-  height: 980px;
+  height: 600px;
   margin: auto;
   border-radius: 8px;
 }
 .container {
   background-color: var(--White);
-  width: 40svw;
-  height: 250px;
+  width: 90svw;
+  height: 600px;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -120,7 +120,7 @@ main {
 /* Modal */
 .background_modal {
   background-color: var(--Pokeopacity);
-  width: 45svw;
+  width: 100svw;
   height: 985px;
   margin: auto;
 }
