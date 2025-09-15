@@ -180,14 +180,20 @@ input {
   cursor: pointer;
 }
 .container_filter {
-  background-color: var(--White);
-  width: 40svw;
-  height: 250px;
+  width: 10svw;
+  height: 700px;
   margin: auto;
-  margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container-1_filter {
+  background-color: var(--White);
+  width: 20svw;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 /* Evolutions Section */
