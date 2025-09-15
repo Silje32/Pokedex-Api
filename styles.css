@@ -144,6 +144,13 @@ h2 {
   text-align: center;
   padding-top: 20px;
 }
+h3 {
+  font-family: "Open Sans", "Arial" sans-serif;
+  font-size: 25px;
+  color: var(--Black);
+  text-align: center;
+  padding-top: 20px;
+}
 .container-2 {
   background-color: var(--White);
   width: 90svw;
