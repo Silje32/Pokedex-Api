@@ -198,6 +198,14 @@ input {
 }
 
 /* Evolutions Section */
+.container-2_evolution {
+  background-color: var(--White);
+  width: 90svw;
+  min-height: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 250px;
+}
 .gray-box {
   background-color: var(--Background_gray);
   width: 80svw;
