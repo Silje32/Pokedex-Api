@@ -96,7 +96,7 @@ li a {
 /* Main */
 main {
   min-width: 100svw;
-  min-height: 150svh;
+  min-height: 80svh;
   background-image: url(./images/grass.jpeg);
 }
 .background {
