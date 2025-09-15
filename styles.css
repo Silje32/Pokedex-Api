@@ -88,6 +88,7 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 400px;
 }
 .nav-btn:hover {
   border-color: var(--Pokeyellow);
