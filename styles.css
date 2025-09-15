@@ -105,7 +105,7 @@ main {
 .background {
   background-color: var(--Pokeopacity);
   width: 95svw;
-  height: 1300px;
+  height: 980px;
   margin: auto;
   border-radius: 8px;
 }
