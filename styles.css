@@ -118,20 +118,21 @@ main {
 .background_modal {
   background-color: var(--Pokeopacity);
   width: 45svw;
-  height: 1200px;
+  height: 985px;
   margin: auto;
 }
 .container-dialog {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .container-1 {
   background-color: var(--White);
   width: 20svw;
   height: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 h2 {
   font-family: "Open Sans", "Arial" sans-serif;
@@ -191,9 +192,9 @@ input {
   background-color: var(--White);
   width: 20svw;
   height: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 /* Evolutions Section */
