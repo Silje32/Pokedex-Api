@@ -5,14 +5,16 @@ const displayImg3 = document.querySelector("#img-evolutions_3");
 const apiEndpoint = "https://pokeapi.co/api/v2/evolution-chain";
 
 // Handles API data
-async function getData(url) {
+async function getData() {
   try {
-    const response = await fetch(url);
-    console.log(url);
-    const data = await response.json();
-    console.log(data);
+    for (let evo in evolutions) {
+      const response = await fetch(evo);
+      console.log(evo);
+      const data = await response.json();
+      console.log(data);
+    }
 
-    renderImg(data);
+    renderImg();
 
     if (response.ok) {
       throw new Error("Network response was not ok");
@@ -27,8 +29,7 @@ getData(apiEndpoint);
 function renderImg(data) {
   data.forEach((element) => {
     const img1 = document.createElement("img-evolutions_1");
-    img1.src = element.img;
-    img1.alt = element.name;
+    img1.url = element.img;
     displayImg1.appendChild(img1);
   });
 }

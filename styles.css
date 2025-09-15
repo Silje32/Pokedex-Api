@@ -105,7 +105,7 @@ main {
 .background {
   background-color: var(--Pokeopacity);
   width: 95svw;
-  height: 1200px;
+  height: 1300px;
   margin: auto;
   border-radius: 8px;
 }
@@ -144,6 +144,15 @@ h2 {
   text-align: center;
   padding-top: 20px;
 }
+.container-2 {
+  background-color: var(--White);
+  width: 90svw;
+  min-height: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Search Section */
 input {
   width: 400px;
   box-sizing: border-box;
@@ -156,15 +165,6 @@ input {
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
-.container-2 {
-  background-color: var(--White);
-  width: 90svw;
-  min-height: 500px;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-/* Search Section */
 #find {
   display: flex;
   justify-content: center;
@@ -207,7 +207,7 @@ input {
   min-height: 500px;
   margin: auto;
   margin-bottom: 10px;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 .gray-box {
   background-color: var(--Background_gray);
