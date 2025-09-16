@@ -35,6 +35,7 @@ body {
 /* Header */
 header {
   min-width: 100svw;
+  margin-bottom: 20px;
 }
 .flex {
   display: flex;
