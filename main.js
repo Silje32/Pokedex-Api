@@ -1,5 +1,6 @@
 const displayImg = document.querySelector("#img-pokemon");
 const searchInput = document.querySelector("#input");
+const displayInput = document.querySelector("#result");
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
