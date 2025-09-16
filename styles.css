@@ -231,6 +231,15 @@ input {
   font-weight: bold;
   border-radius: 10px;
 }
+#type-1,
+#type-2 {
+  width: 80px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  justify-content: center;
+}
 
 /* Footer */
 footer {
