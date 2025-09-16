@@ -20,7 +20,8 @@ const genderBtn = document.querySelector("#gender");
 
 const filterBtn1 = document.querySelector("#filterBtn_1");
 const filterBtn2 = document.querySelector("#filterBtn_2");
-const selectType = document.querySelector("#typeSelect");
+const selectType = document.querySelector("#typeSelectFilter");
+const sortType = document.querySelector("#typeSelectSort");
 
 const type1Btn = document.querySelector("#type-1");
 const type2Btn = document.querySelector("#type-2");
