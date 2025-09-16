@@ -1,4 +1,3 @@
-const displayImg = document.querySelector("#img-pokemon");
 const searchInput = document.querySelector("#input");
 const displayInput = document.querySelector("#result");
 
@@ -6,6 +5,7 @@ const dialog = document.querySelector("#myDialog");
 const showButton = document.querySelector("#myDialog + #close");
 const closeButton = document.querySelector("#myDialog + #close");
 
+const imgPokemon = document.querySelector(".img-pokemon");
 const name = document.querySelector(".name");
 const id = document.querySelector(".id");
 
