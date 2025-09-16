@@ -29,6 +29,8 @@ const weaknesses = document.querySelector(".weaknesses");
 const abilities = document.querySelector(".abilities");
 const generations = document.querySelector(".generations");
 
+const imgSprites = document.querySelector(".sprites");
+
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
