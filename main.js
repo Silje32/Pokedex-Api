@@ -6,6 +6,8 @@ const dialog = document.querySelector("#myDialog");
 const showButton = document.querySelector("#myDialog + #close");
 const closeButton = document.querySelector("#myDialog + #close");
 
+const name = document.querySelector(".name");
+
 const rotateBtn = document.querySelector("#rotate");
 const shinyBtn = document.querySelector("#shiny");
 const genderBtn = document.querySelector("#gender");
