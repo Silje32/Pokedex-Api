@@ -6,6 +6,10 @@ const dialog = document.querySelector("#myDialog");
 const showButton = document.querySelector("#myDialog + #close");
 const closeButton = document.querySelector("#myDialog + #close");
 
+const rotateBtn = document.querySelector("#rotate");
+const shinyBtn = document.querySelector("#shiny");
+const genderBtn = document.querySelector("#gender");
+
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
