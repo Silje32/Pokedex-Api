@@ -16,6 +16,9 @@ const filterBtn2 = document.querySelector("#filterBtn_2");
 const type1Btn = document.querySelector("#type-1");
 const type2Btn = document.querySelector("#type-2");
 
+const info = document.querySelector(".info");
+const weaknesses = document.querySelector(".weaknesses");
+
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
