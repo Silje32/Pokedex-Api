@@ -182,6 +182,31 @@ h3 {
   cursor: pointer;
   font-size: 25px;
 }
+#filterBtn_1 {
+  width: 100px;
+  background-color: var(--Pokeyellow);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#filterBtn_2 {
+  width: 100px;
+  background-color: var(--Pokeyellow);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#type-1,
+#type-2 {
+  width: 80px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  justify-content: center;
+}
 
 /* Search Section */
 input {
@@ -214,31 +239,6 @@ input {
 #find:hover {
   background-color: var(--Pokeyellow_opacity);
   cursor: pointer;
-}
-#filterBtn_1 {
-  width: 100px;
-  background-color: var(--Pokeyellow);
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 10px;
-}
-#filterBtn_2 {
-  width: 100px;
-  background-color: var(--Pokeyellow);
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 10px;
-}
-#type-1,
-#type-2 {
-  width: 80px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 10px;
-  justify-content: center;
 }
 
 /* Footer */
