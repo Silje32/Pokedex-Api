@@ -18,6 +18,7 @@ const type2Btn = document.querySelector("#type-2");
 
 const info = document.querySelector(".info");
 const weaknesses = document.querySelector(".weaknesses");
+const abilities = document.querySelector(".abilities");
 
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
