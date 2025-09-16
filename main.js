@@ -28,3 +28,9 @@ function searchData(data) {
   data.forEach((element) => {});
 }
 searchData(apiEndpoint);
+
+// Close modal
+const closeModal = (modal) => {
+  modal.close();
+  document.body.removeEventListener("click", closeModal);
+};
