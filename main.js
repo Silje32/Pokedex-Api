@@ -1,6 +1,11 @@
 const displayImg = document.querySelector("#img-pokemon");
 const searchInput = document.querySelector("#input");
 const displayInput = document.querySelector("#result");
+
+const dialog = document.querySelector("#myDialog");
+const showButton = document.querySelector("#myDialog + #close");
+const closeButton = document.querySelector("#myDialog + #close");
+
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
@@ -31,10 +36,12 @@ function searchData(data) {
 }
 searchData(apiEndpoint);
 
-// Close modal
-modal.addEventListener("click", () => closeModal(modal));
+// "Show the dialog" button opens the dialog modally
+showButton.addEventListener("click", () => {
+  dialog.showModal();
+});
 
-const closeModal = (modal) => {
-  modal.close();
-  document.body.removeEventListener("click", closeModal);
-};
+// "Close" button closes the dialog
+closeButton.addEventListener("click", () => {
+  dialog.close();
+});
