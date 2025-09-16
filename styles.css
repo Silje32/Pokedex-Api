@@ -159,10 +159,13 @@ h3 {
   text-align: center;
   padding-top: 20px;
 }
-#rotate {
+#rotate,
+#shiny,
+#gender {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 200px;
@@ -171,10 +174,14 @@ h3 {
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
-#rotate:hover {
+#rotate:hover,
+#shiny:hover,
+#gender:hover {
   background-color: var(--Pokeyellow_opacity);
   cursor: pointer;
+  font-size: 25px;
 }
 
 /* Search Section */
