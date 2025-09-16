@@ -10,6 +10,9 @@ const rotateBtn = document.querySelector("#rotate");
 const shinyBtn = document.querySelector("#shiny");
 const genderBtn = document.querySelector("#gender");
 
+const filterBtn1 = document.querySelector("##filterBtn_1");
+const filterBtn2 = document.querySelector("##filterBtn_2");
+
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
