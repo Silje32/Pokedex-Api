@@ -162,7 +162,6 @@ h3 {
 #rotate,
 #shiny,
 #gender {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
@@ -215,6 +214,22 @@ input {
 #find:hover {
   background-color: var(--Pokeyellow_opacity);
   cursor: pointer;
+}
+#filterBtn_1 {
+  width: 100px;
+  background-color: var(--Pokeyellow);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#filterBtn_2 {
+  width: 100px;
+  background-color: var(--Pokeyellow);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 /* Footer */
