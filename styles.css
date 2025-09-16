@@ -97,8 +97,8 @@ dialog:open::backdrop {
   background-color: black;
   animation: backdrop-fade-in 0.7s ease-out forwards;
 }
-/* Animation keyframes */
 
+/* Animation keyframes */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -159,13 +159,6 @@ h3 {
   text-align: center;
   padding-top: 20px;
 }
-.container-2 {
-  background-color: var(--White);
-  width: 90svw;
-  min-height: 500px;
-  margin: auto;
-  margin-bottom: 20px;
-}
 
 /* Search Section */
 input {
@@ -198,22 +191,6 @@ input {
 #find:hover {
   background-color: var(--Pokeyellow_opacity);
   cursor: pointer;
-}
-.container_filter {
-  width: 10svw;
-  height: 700px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.container-1_filter {
-  background-color: var(--White);
-  width: 20svw;
-  height: 300px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
 }
 
 /* Footer */
