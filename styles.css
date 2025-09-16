@@ -1,15 +1,7 @@
 :root {
-  /* Base Stats */
-  --Red: rgb(255, 99, 71);
-  --Light-red: rgba(255, 99, 71, 0.8);
-  --Orange: rgb(255, 80, 0);
-  --Light-orange: rgba(255, 80, 0, 0.8);
-  --Yellow: rgb(237, 247, 0);
-  --Light-yellow: rgba(237, 247, 0, 0.8);
-  --Green: rgb(0, 231, 123);
-  --Light-green: rgba(0, 231, 123, 0.8);
-  --Purple: rgb(207, 0, 255);
-  --Light-purple: rgba(207, 0, 255, 0.8);
+  /* Types */
+  --Poison: rgb(255, 99, 71);
+  --Grass: rgba(193, 240, 193);
 
   /* Pokemon Colors */
   --Pokeyellow: rgb(247, 207, 70);
@@ -51,49 +43,6 @@ h1 {
   text-align: center;
   margin-top: 30px;
   height: 110px;
-}
-nav {
-  min-width: 100svw;
-  height: 80px;
-  background-color: var(--Pokeopacity);
-  display: flex;
-  justify-content: center;
-}
-ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-li {
-  list-style: none;
-  display: inline-block;
-}
-li a {
-  text-decoration: none;
-  color: var(--Black);
-  font-family: "Elementals", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-}
-.nav-btn {
-  background-color: var(--White);
-  width: 300px;
-  height: 50px;
-  border-radius: 8px;
-  border-color: var(--Black);
-  text-align: center;
-  font-size: 24px;
-  margin-right: 400px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 400px;
-}
-.nav-btn:hover {
-  border-color: var(--Pokeyellow);
-  font-weight: bold;
-  cursor: pointer;
 }
 
 /* Main */
