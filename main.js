@@ -1,20 +1,16 @@
-const displayImg1 = document.querySelector("#img-evolutions_1");
-const displayImg2 = document.querySelector("#img-evolutions_2");
-const displayImg3 = document.querySelector("#img-evolutions_3");
-
-const apiEndpoint = "https://pokeapi.co/api/v2/evolution-chain";
+const displayImg = document.querySelector("#img-pokemon");
+const searchInput = document.querySelector("#input");
+const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
 async function getData() {
   try {
-    for (let evo in evolutions) {
-      const response = await fetch(evo);
-      console.log(evo);
-      const data = await response.json();
-      console.log(data);
-    }
+    const response = await fetch(apiEndpoint);
+    console.log(apiEndpoint);
+    const data = await response.json();
+    console.log(data);
 
-    renderImg();
+    searchData();
 
     if (response.ok) {
       throw new Error("Network response was not ok");
@@ -23,14 +19,11 @@ async function getData() {
     console.log("There has been a problem: ", error.message);
   }
 }
+
 getData(apiEndpoint);
 
 // Renders element to page
-function renderImg(data) {
-  data.forEach((element) => {
-    const img1 = document.createElement("img-evolutions_1");
-    img1.url = element.img;
-    displayImg1.appendChild(img1);
-  });
+function searchData(data) {
+  data.forEach((element) => {});
 }
-renderImg(apiEndpoint);
+searchData(apiEndpoint);
