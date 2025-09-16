@@ -6,8 +6,10 @@ const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 // Handles API data
 async function getData() {
   try {
-    const response = await fetch(apiEndpoint);
-    console.log(apiEndpoint);
+    for (let poke in pokemons) {
+      await fetch(poke);
+      console.log(poke);
+    }
     const data = await response.json();
     console.log(data);
 
@@ -30,6 +32,8 @@ function searchData(data) {
 searchData(apiEndpoint);
 
 // Close modal
+modal.addEventListener("click", () => closeModal(modal));
+
 const closeModal = (modal) => {
   modal.close();
   document.body.removeEventListener("click", closeModal);
