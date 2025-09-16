@@ -9,6 +9,11 @@ const closeButton = document.querySelector("#myDialog + #close");
 const name = document.querySelector(".name");
 const id = document.querySelector(".id");
 
+const height = document.querySelector(".height");
+const weight = document.querySelector(".weight");
+const gender = document.querySelector(".gender");
+const category = document.querySelector(".category");
+
 const rotateBtn = document.querySelector("#rotate");
 const shinyBtn = document.querySelector("#shiny");
 const genderBtn = document.querySelector("#gender");
