@@ -60,7 +60,7 @@ main {
 .background {
   background-color: var(--Pokeopacity);
   width: 95svw;
-  height: 600px;
+  height: 700px;
   margin: auto;
   border-radius: 8px;
 }
@@ -70,6 +70,7 @@ main {
   height: 600px;
   margin: auto;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* Modal */
@@ -178,4 +179,8 @@ p a {
   font-size: 18px;
   font-weight: normal;
   font-style: italic;
+}
+.footer {
+  display: flex;
+  align-items: center;
 }
