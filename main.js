@@ -47,7 +47,7 @@ async function getData(url) {
 
     searchData(data.results);
 
-    if (response.ok) {
+    if (result.ok) {
       throw new Error("Network response was not ok");
     }
   } catch (error) {
