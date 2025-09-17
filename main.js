@@ -38,16 +38,14 @@ const imgSprites = document.querySelector(".sprites");
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 
 // Handles API data
-async function getData() {
+async function getData(url) {
   try {
-    for (let poke in pokemons) {
-      await fetch(poke);
-      console.log(poke);
-    }
-    const data = await response.json();
+    const result = await fetch(url);
+    console.log(url);
+    const data = await result.json();
     console.log(data);
 
-    searchData();
+    searchData(data);
 
     if (response.ok) {
       throw new Error("Network response was not ok");
@@ -61,7 +59,15 @@ getData(apiEndpoint);
 
 // Renders element to page
 function searchData(data) {
-  data.forEach((element) => {});
+  data.forEach((element) => {
+    const suggestions = document.createElement("li");
+    suggestions.textContent = element.url;
+    displayInput.append(suggestions);
+    // Eventlistener for modal
+    suggestions.addEventListener("click", () => {
+      displayEffect(element);
+    });
+  });
 }
 searchData(apiEndpoint);
 
@@ -80,14 +86,14 @@ input.addEventListener("input", () => {
   const value = input.value.toLowerCase();
   suggestions.innerHTML = "";
   if (value === "") return;
-  const filtered = apiEndpoint.filter((pokemon) =>
-    pokemon.toLowerCase().includes(value)
+  const filtered = apiEndpoint.filter((suggestions) =>
+    suggestions.toLowerCase().includes(value)
   );
-  filtered.forEach((pokemon) => {
+  filtered.forEach((suggestions) => {
     const li = document.createElement("li");
-    li.textContent = pokemon;
+    li.textContent = suggestions;
     li.addEventListener("click", () => {
-      input.value = pokemon;
+      input.value = suggestions;
       suggestions.innerHTML = "";
     });
     suggestions.appendChild(li);
