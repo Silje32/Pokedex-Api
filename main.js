@@ -66,13 +66,13 @@ async function getData(url) {
 getData(apiEndpoint);
 
 // Renders element to page
-async function searchData(data) {
+async function searchData(pokemon) {
   const result = await fetch(url);
   console.log(url);
   const data = await result.json();
   console.log(data);
 
-  data.forEach((element) => {
+  pokemon.forEach((element) => {
     const suggestions = document.createElement("li");
     suggestions.textContent = element.name;
     displayInput.append(suggestions);
