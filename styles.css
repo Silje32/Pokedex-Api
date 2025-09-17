@@ -229,9 +229,9 @@ input {
   padding: 12px 20px 12px 40px;
 }
 #suggestions {
-  border: 1px solid #ccc;
+  border: 1px solid red;
   width: 300px;
-  max-height: 150px;
+  max-height: 200px;
   overflow-y: auto;
   margin-top: 4px;
   padding: 0;

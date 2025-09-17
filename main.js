@@ -74,3 +74,22 @@ showButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   dialog.close();
 });
+
+// Autocomplete Dropdown
+input.addEventListener("input", () => {
+  const value = input.value.toLowerCase();
+  suggestions.innerHTML = "";
+  if (value === "") return;
+  const filtered = apiEndpoint.filter((pokemon) =>
+    pokemon.toLowerCase().includes(value)
+  );
+  filtered.forEach((pokemon) => {
+    const li = document.createElement("li");
+    li.textContent = pokemon;
+    li.addEventListener("click", () => {
+      input.value = pokemon;
+      suggestions.innerHTML = "";
+    });
+    suggestions.appendChild(li);
+  });
+});
