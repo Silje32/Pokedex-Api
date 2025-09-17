@@ -36,9 +36,9 @@ const generations = document.querySelector(".generations");
 const imgSprites = document.querySelector(".sprites");
 
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
-const data = apiEndpoint;
+//const data = apiEndpoint;
 
-const loading = document.querySelector("#loading");
+const loading = document.querySelector("#loadingEl");
 
 // Handles API data
 async function getData(url) {
@@ -49,13 +49,7 @@ async function getData(url) {
     console.log(data);
 
     // Hide loading when data arrives
-    loadingEl.style.display = "none";
-
-    // Show data
-    dataEl.innerHTML = `
-          <h2>${data.title}</h2>
-          <p>${data.body}</p>
-        `;
+    loading.style.display = "none";
 
     searchData(data.results);
 
@@ -64,17 +58,20 @@ async function getData(url) {
     }
   } catch (error) {
     console.log("There has been a problem: ", error.message);
-    loadingEl.style.display = "none";
+    loading.style.display = "none";
     dataEl.textContent = "Error loading data :cry:";
   }
 }
-// Call on page load
-fetchData();
 
 getData(apiEndpoint);
 
 // Renders element to page
-function searchData(data) {
+async function searchData(data) {
+  const result = await fetch(url);
+  console.log(url);
+  const data = await result.json();
+  console.log(data);
+
   data.forEach((element) => {
     const suggestions = document.createElement("li");
     suggestions.textContent = element.name;
@@ -102,7 +99,7 @@ input.addEventListener("input", () => {
   const value = input.value.toLowerCase();
   suggestions.innerHTML = "";
   if (value === "") return;
-  const filtered = apiEndpoint.filter((suggestions) =>
+  const filtered = data.result.filter((suggestions) =>
     suggestions.toLowerCase().includes(value)
   );
   filtered.forEach((suggestions) => {

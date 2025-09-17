@@ -234,7 +234,7 @@ input {
 #suggestions {
   border: 1px solid var(--Pokeyellow);
   width: 400px;
-  max-height: 400px;
+  max-height: 800px;
   overflow-y: auto;
   margin-top: 4px;
   padding: 0;
@@ -261,7 +261,7 @@ input {
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
-  margin-top: 100px;
+  margin-top: 300px;
 }
 #find:hover {
   background-color: var(--Pokeyellow_opacity);
