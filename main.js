@@ -1,5 +1,7 @@
+const searchForm = document.querySelector("#search");
 const searchInput = document.querySelector("#input");
 const displayInput = document.querySelector("#result");
+const findBtn = document.querySelector("#find");
 
 const dialog = document.querySelector("#myDialog");
 const showButton = document.querySelector("#myDialog + #close");
