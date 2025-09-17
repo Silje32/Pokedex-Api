@@ -228,6 +228,23 @@ input {
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
+#suggestions {
+  border: 1px solid #ccc;
+  width: 300px;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 4px;
+  padding: 0;
+  list-style: none;
+  background: white;
+}
+#suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+#suggestions li:hover {
+  background-color: lightgray;
+}
 #find {
   display: flex;
   justify-content: center;
