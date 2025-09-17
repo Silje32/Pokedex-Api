@@ -45,6 +45,15 @@ async function getData(url) {
     const data = await result.json();
     console.log(data);
 
+    // Hide loading when data arrives
+    loadingEl.style.display = "none";
+
+    // Show data
+    dataEl.innerHTML = `
+          <h2>${data.title}</h2>
+          <p>${data.body}</p>
+        `;
+
     searchData(data.results);
 
     if (result.ok) {
@@ -52,9 +61,12 @@ async function getData(url) {
     }
   } catch (error) {
     console.log("There has been a problem: ", error.message);
+    loadingEl.style.display = "none";
+    dataEl.textContent = "Error loading data :cry:";
   }
 }
-
+// Call on page load
+fetchData();
 getData(apiEndpoint);
 
 // Renders element to page
