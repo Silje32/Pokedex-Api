@@ -45,7 +45,7 @@ async function getData(url) {
     const data = await result.json();
     console.log(data);
 
-    searchData(data);
+    searchData(data.results);
 
     if (response.ok) {
       throw new Error("Network response was not ok");
@@ -61,7 +61,7 @@ getData(apiEndpoint);
 function searchData(data) {
   data.forEach((element) => {
     const suggestions = document.createElement("li");
-    suggestions.textContent = element.url;
+    suggestions.textContent = element.name;
     displayInput.append(suggestions);
     // Eventlistener for modal
     suggestions.addEventListener("click", () => {
@@ -69,7 +69,7 @@ function searchData(data) {
     });
   });
 }
-searchData(apiEndpoint);
+searchData(data);
 
 // "Show the dialog" button opens the dialog modally
 showButton.addEventListener("click", () => {

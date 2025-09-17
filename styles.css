@@ -219,18 +219,18 @@ h3 {
 input {
   width: 400px;
   box-sizing: border-box;
-  border: 2px solid var(--Black);
+  border: 2px solid var(--Pokeyellow);
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
   background-image: url(./images/Search.png);
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+  padding: 15px 20px 15px 40px;
 }
 #suggestions {
-  border: 1px solid red;
-  width: 300px;
+  border: 1px solid var(--Pokeyellow);
+  width: 400px;
   max-height: 200px;
   overflow-y: auto;
   margin-top: 4px;
@@ -243,7 +243,7 @@ input {
   cursor: pointer;
 }
 #suggestions li:hover {
-  background-color: lightgray;
+  background-color: var(--Background_gray);
 }
 #find {
   display: flex;
