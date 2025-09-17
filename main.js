@@ -1,6 +1,6 @@
 const searchForm = document.querySelector("#search");
 const searchInput = document.querySelector("#input");
-const displayInput = document.querySelector("#result");
+const displayInput = document.querySelector("#suggestions");
 const findBtn = document.querySelector("#find");
 
 const dialog = document.querySelector("#myDialog");
