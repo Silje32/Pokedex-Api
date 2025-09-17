@@ -38,6 +38,8 @@ const imgSprites = document.querySelector(".sprites");
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
 const data = apiEndpoint;
 
+const loading = document.querySelector("#loading");
+
 // Handles API data
 async function getData(url) {
   try {
@@ -68,6 +70,7 @@ async function getData(url) {
 }
 // Call on page load
 fetchData();
+
 getData(apiEndpoint);
 
 // Renders element to page
