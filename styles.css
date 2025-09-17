@@ -231,7 +231,7 @@ input {
 #suggestions {
   border: 1px solid var(--Pokeyellow);
   width: 400px;
-  max-height: 200px;
+  max-height: 400px;
   overflow-y: auto;
   margin-top: 4px;
   padding: 0;

@@ -36,6 +36,7 @@ const generations = document.querySelector(".generations");
 const imgSprites = document.querySelector(".sprites");
 
 const apiEndpoint = "https://pokeapi.co/api/v2/pokemon";
+const data = apiEndpoint;
 
 // Handles API data
 async function getData(url) {
