@@ -10,8 +10,8 @@
   --Pokeyellow_opacity: rgba(247, 207, 70, 0.6);
 
   /* Base palette */
-  --Black: #000;
-  --White: #fff;
+  --Black: rgb(0, 0, 0);
+  --White: rgb(255, 255, 255);
   --Background_gray: #eee;
 
   /* Layout helpers */
