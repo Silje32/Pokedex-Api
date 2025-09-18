@@ -12,7 +12,7 @@
   /* Base palette */
   --Black: rgb(0, 0, 0);
   --White: rgb(255, 255, 255);
-  --Background_gray: #eee;
+  --Background_gray: rgb(238, 238, 238);
 
   /* Layout helpers */
   --radius: 12px;
