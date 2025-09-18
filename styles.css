@@ -105,8 +105,10 @@ main {
 .container {
   background: var(--White);
   width: 100%;
+  max-height: 600px;
   padding: 1.5rem;
   border-radius: var(--radius);
+  display: flex;
 }
 
 /* Search */
@@ -166,7 +168,7 @@ main {
 dialog {
   border: 0;
   padding: 0;
-  width: min(96svw, 1100px);
+  width: min(98svw);
   margin: auto;
   background: transparent;
   animation: fade-out 0.4s ease-out;
@@ -325,7 +327,11 @@ select {
 }
 
 /* Loading image */
+.loading-icon {
+  width: 10%;
+  display: flex;
+  justify-content: end;
+}
 #loadingEl {
-  width: 8%;
-  margin: 1rem auto;
+  width: 8px;
 }
