@@ -175,10 +175,18 @@ dialog[open]::backdrop {
 
 /* Titles */
 h2 {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 35px;
+  color: var(--Black);
+  text-align: center;
   font-size: var(--fs-400);
   padding-top: 0.25rem;
 }
 h3 {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 25px;
+  color: var(--Black);
+  text-align: center;
   font-size: var(--fs-300);
   padding-top: 0.25rem;
 }
