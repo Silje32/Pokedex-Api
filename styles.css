@@ -226,7 +226,7 @@ h3 {
 /* Button rows */
 .btn-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.5rem;
 }
 #rotate,
