@@ -74,7 +74,7 @@ body {
 /* Header */
 header {
   min-width: 100svw;
-  min-height: 30svh;
+  min-height: 20svh;
 }
 .flex {
   display: flex;
@@ -86,6 +86,7 @@ h1 {
   font-size: 55px;
   color: var(--Black);
   text-align: center;
+  margin-top: 10px;
 }
 /* Main wrappers */
 main {
