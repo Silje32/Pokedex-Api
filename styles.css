@@ -56,7 +56,6 @@ body {
   font-family: system-ui, "Open Sans", Arial, sans-serif;
   font-size: 18px;
   color: var(--Black);
-  background: url(./images/grass.jpeg) center/cover fixed no-repeat;
 }
 
 /* Utility: visually hide text but keep for screen readers */
@@ -72,11 +71,27 @@ body {
   padding: 0;
   margin: -1px;
 }
-
+/* Header */
+header {
+  min-width: 100svw;
+  min-height: 30svh;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Pokemon Hollow", sans-serif;
+  font-size: 55px;
+  color: var(--Black);
+  text-align: center;
+}
 /* Main wrappers */
 main {
   min-width: 100svw;
   min-height: 80svh;
+  background: url(./images/grass.jpeg) center/cover fixed no-repeat;
 }
 .background {
   background: var(--Pokeopacity);
@@ -310,7 +325,6 @@ select {
 
 /* Loading image */
 #loadingEl {
-  width: 48px;
-  display: block;
+  width: 8%;
   margin: 1rem auto;
 }
