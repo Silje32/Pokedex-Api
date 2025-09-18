@@ -17,6 +17,7 @@
   /* Layout helpers */
   --radius: 12px;
   --shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --border-radius-circle: 50px;
 
   /* Typography scale */
   --fs-100: 0.875rem;
@@ -201,6 +202,8 @@ h3 {
   max-width: 100%;
   height: auto;
   image-rendering: pixelated;
+  background-color: var(--Background_gray);
+  border-radius: var(--border-radius-circle);
 }
 
 /* Button rows */
