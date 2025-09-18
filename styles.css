@@ -335,3 +335,24 @@ select {
 #loadingEl {
   width: 8px;
 }
+
+/* Footer */
+footer {
+  min-width: 100svw;
+  height: 135px;
+  background-color: var(--Pokeopacity);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p a {
+  text-decoration: none;
+  color: var(--White);
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
