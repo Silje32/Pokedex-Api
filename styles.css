@@ -345,6 +345,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+p,
 p a {
   text-decoration: none;
   color: var(--White);
