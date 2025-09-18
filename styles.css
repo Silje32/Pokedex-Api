@@ -257,6 +257,14 @@ h3 {
   border: 0;
   border-radius: 10px;
 }
+.h3 {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 25px;
+  color: var(--Black);
+  text-align: left;
+  font-size: var(--fs-300);
+  padding-top: 0.25rem;
+}
 /* Selects */
 select {
   padding: 0.5rem 0.75rem;
