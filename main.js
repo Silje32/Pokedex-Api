@@ -33,11 +33,13 @@ const rotateBtn = document.querySelector("#rotate"); // rotates the image
 const shinyBtn = document.querySelector("#shiny"); // toggles shiny vs default sprite
 const genderBtn = document.querySelector("#gender"); // toggles gender sprites (if available)
 
-// Sort/filter controls (placeholders to wire into your list/grid view)
-const filterBtn1 = document.querySelector("#filterBtn_1"); // "Sort By" button
-const filterBtn2 = document.querySelector("#filterBtn_2"); // "Types" button
-const selectFilterType = document.querySelector("#typeSelectFilter"); // type filter select
-const selectSortType = document.querySelector("#typeSelectSort"); // sort select
+// Stats controls
+const statHP = document.querySelector(".stats_grid .hp");
+const statAttack = document.querySelector(".stats_grid .attack");
+const statDefense = document.querySelector(".stats_grid .defense");
+const statSpatk = document.querySelector(".stats_grid .spatk");
+const statSpdef = document.querySelector(".stats_grid .spdef");
+const statSpeed = document.querySelector(".stats_grid .speed");
 
 // Type buttons (we’ll set their labels from API)
 const type1Btn = document.querySelector("#type-1"); // first type
@@ -184,6 +186,17 @@ async function loadPokemon(nameOrId) {
       ? weaknesses.map(capitalize).join(", ")
       : "—";
 
+    // Stats
+    const getStat = (name) =>
+      pokemon.stats.find((s) => s.stat.name === name)?.base_stat ?? "-";
+
+    statHP.textContent = `HP: ${getStat("hp")}`;
+    statAttack.textContent = `Attack: ${getStat("attack")}`;
+    statDefense.textContent = `Defense: ${getStat("defense")}`;
+    statSpatk.textContent = `Sp.Atk: ${getStat("special-attack")}`;
+    statSpdef.textContent = `Sp.Def: ${getStat("special-defense")}`;
+    statSpeed.textContent = `Speed: ${getStat("speed")}`;
+
     // Main sprite + gallery
     renderSprites(pokemon);
   } catch (err) {
@@ -280,16 +293,6 @@ genderBtn.addEventListener("click", () => {
   } else {
     alert("No female sprite available for this Pokémon.");
   }
-});
-
-/* ===== Sort/filter controls (placeholder handlers to integrate with your list/grid) ===== */
-filterBtn1.addEventListener("click", () => {
-  // In a full list view, you would sort cards based on selectSortType.value
-  console.log("Sort by:", selectSortType.value);
-});
-filterBtn2.addEventListener("click", () => {
-  // In a full list view, you would filter cards by selectFilterType.value
-  console.log("Filter type:", selectFilterType.value);
 });
 
 /* ===== Small helpers ===== */
