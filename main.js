@@ -33,6 +33,11 @@ const rotateBtn = document.querySelector("#rotate"); // rotates the image
 const shinyBtn = document.querySelector("#shiny"); // toggles shiny vs default sprite
 const genderBtn = document.querySelector("#gender"); // toggles gender sprites (if available)
 
+// Moves
+const movesList = document.querySelector(".moveList");
+const sortButton = document.querySelector("#sort-moves");
+let currentMoves = []; // lagres så vi kan sortere uten nytt fetch
+
 // Stats controls
 const statHP = document.querySelector(".stats_grid .hp");
 const statAttack = document.querySelector(".stats_grid .attack");
@@ -187,6 +192,8 @@ async function loadPokemon(nameOrId) {
       : "—";
 
     // Moves
+    currentMoves = pokemon.moves.map((m) => m.move.name); // bare navneliste
+    renderMoves(currentMoves);
 
     // Stats
     const getStat = (name) =>
@@ -205,6 +212,22 @@ async function loadPokemon(nameOrId) {
     alert(`Could not load Pokémon: ${err.message}`);
   }
 }
+/* Make function render moves */
+function renderMoves(moves) {
+  movesList.innerHTML = "";
+  moves.forEach((name) => {
+    const li = document.createElement("li");
+    li.textContent = capitalize(name);
+    movesList.appendChild(li);
+  });
+}
+
+sortButton.addEventListener("click", () => {
+  const sorted = [...currentMoves].sort((a, b) =>
+    a.localeCompare(b, "en", { sensitivity: "base" })
+  );
+  renderMoves(sorted);
+});
 
 /* ===== Compute weaknesses from type endpoints ===== */
 async function computeWeaknesses(typeNames) {
@@ -306,6 +329,11 @@ function prettyGen(g) {
 /* ===== Optional: ESC closes dialog (method=dialog already handles close button) ===== */
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && dialog.open) dialog.close();
+});
+
+/* ===== Optional:  dialog closes with a click  ===== */
+dialog.addEventListener("click", (e) => {
+  if (!dialog.contains(e.target) && e.target !== dialog) dialog.close();
 });
 
 /* ===== Styling for rotation effect (kept in JS for clarity; move to CSS if preferred) ===== */
