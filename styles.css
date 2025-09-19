@@ -300,6 +300,14 @@ h3 {
   border-radius: 10px;
   cursor: pointer;
 }
+.moveList {
+  width: 200px;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+}
 .h3 {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 25px;
