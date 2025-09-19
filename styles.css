@@ -118,7 +118,7 @@ main {
   justify-items: start;
 }
 #input {
-  width: min(100%, 420px);
+  min-width: 520px;
   border: 2px solid var(--Pokeyellow);
   border-radius: 8px;
   font-size: var(--fs-200);
@@ -132,7 +132,7 @@ main {
 }
 #suggestions {
   border: 1px solid var(--Pokeyellow);
-  width: min(100%, 420px);
+  width: 520px;
   max-height: 150px;
   overflow-y: auto;
   list-style: none;
@@ -152,9 +152,9 @@ main {
   align-items: center;
   justify-content: center;
   padding: 0.85rem 1rem;
-  width: min(100%, 420px);
+  width: 520px;
   background: var(--Pokeyellow);
-  font-size: var(--fs-200);
+  font-size: var(--fs-300);
   font-weight: 700;
   border: 0;
   border-radius: 10px;
