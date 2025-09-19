@@ -345,7 +345,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
-p,
+p {
+  color: var(--Black);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 10px;
+}
 p a {
   text-decoration: none;
   color: var(--White);
@@ -360,4 +367,8 @@ p a:hover {
 .footer {
   display: flex;
   align-items: center;
+}
+.copyright {
+  background-color: none;
+  margin: 5px;
 }
