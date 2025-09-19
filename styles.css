@@ -353,6 +353,10 @@ p a {
   font-weight: normal;
   font-style: italic;
 }
+p:hover,
+p a:hover {
+  font-size: 20px;
+}
 .footer {
   display: flex;
   align-items: center;
