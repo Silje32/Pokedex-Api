@@ -186,6 +186,8 @@ async function loadPokemon(nameOrId) {
       ? weaknesses.map(capitalize).join(", ")
       : "—";
 
+    // Moves
+
     // Stats
     const getStat = (name) =>
       pokemon.stats.find((s) => s.stat.name === name)?.base_stat ?? "-";
@@ -203,8 +205,6 @@ async function loadPokemon(nameOrId) {
     alert(`Could not load Pokémon: ${err.message}`);
   }
 }
-
-/* ==== TYPE ENDPOINTS ==== */
 
 /* ===== Compute weaknesses from type endpoints ===== */
 async function computeWeaknesses(typeNames) {
