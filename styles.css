@@ -370,7 +370,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-p {
+.footer p {
   color: var(--Black);
   text-decoration: none;
   font-size: 18px;
@@ -385,7 +385,7 @@ p a {
   font-weight: normal;
   font-style: italic;
 }
-p:hover,
+.footer p:hover,
 p a:hover {
   font-size: 20px;
 }
