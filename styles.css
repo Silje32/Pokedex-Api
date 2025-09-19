@@ -29,6 +29,8 @@
   --Black: rgb(0, 0, 0);
   --White: rgb(255, 255, 255);
   --Background_gray: rgb(238, 238, 238);
+  --Background_name: rgb(119, 119, 119);
+  --Background_id: var(119, 119, 119, 0.4);
 
   /* Layout helpers */
   --radius: 12px;
@@ -239,6 +241,10 @@ h3 {
   image-rendering: pixelated;
   background-color: var(--Background_gray);
   border-radius: var(--border-radius-circle);
+}
+.name {
+  background-color: var(--Background_gray);
+  border-radius: 10px;
 }
 
 /* Button rows */
