@@ -192,8 +192,8 @@ async function loadPokemon(nameOrId) {
       : "—";
 
     // Moves
-    currentMoves = pokemon.moves.map((m) => m.move.name); // bare navneliste
-    renderMoves(currentMoves);
+    //currentMoves = pokemon.moves.map((m) => m.move.name); // bare navneliste
+    //renderMoves(currentMoves);
 
     // Stats
     const getStat = (name) =>
@@ -222,12 +222,12 @@ function renderMoves(moves) {
   });
 }
 
-sortButton.addEventListener("click", () => {
-  const sorted = [...currentMoves].sort((a, b) =>
-    a.localeCompare(b, "en", { sensitivity: "base" })
-  );
-  renderMoves(sorted);
-});
+//sortButton.addEventListener("click", () => {
+//const sorted = [...currentMoves].sort((a, b) =>
+//    a.localeCompare(b, "en", { sensitivity: "base" })
+//  );
+//  renderMoves(sorted);
+//});
 
 /* ===== Compute weaknesses from type endpoints ===== */
 async function computeWeaknesses(typeNames) {
@@ -332,7 +332,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 /* ===== Optional:  dialog closes with a click  ===== */
-dialog.addEventListener("click", (e) => {
+document.addEventListener("click", (e) => {
   if (!dialog.contains(e.target) && e.target !== dialog) dialog.close();
 });
 
