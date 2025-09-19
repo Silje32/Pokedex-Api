@@ -256,7 +256,6 @@ h3 {
 #rotate,
 #shiny,
 #gender,
-#filterBtn_1,
 #filterBtn_2 {
   padding: 0.6rem 0.9rem;
   background: var(--Pokeyellow);
@@ -280,6 +279,14 @@ h3 {
   font-weight: 700;
   border: 0;
   border-radius: 10px;
+}
+#filterBtn_1 {
+  padding: 0.6rem 0.9rem;
+  font-size: var(--fs-200);
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .h3 {
   font-family: "Open Sans", "Arial", sans-serif;
